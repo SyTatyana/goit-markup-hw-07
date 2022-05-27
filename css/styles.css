@@ -2,19 +2,19 @@
 :root{
     --main-font: "Roboto", sans-serif;
     --secondary-font: "Raleway", sans-serif;
-    --primary-text-color: #757575;
-    --secondary-text-color: #212121;
+    --text-color: #757575;
+    --text-secondary-color: #212121;
     --accent-color: #2196F3;
-    --primary-background-color:#FFFFFF;
-    --secondary-background-color: #E5E5E5;
-    --tertiary-background-color: #2F303A;
-    --quaternary-background-color: #F5F4FA;
-    --footer-contact: rgba(255, 255, 255, 0.6);
+    --background-color:#FFFFFF;
+    --background-secondary-color: #E5E5E5;
+    --background-tertiary-color: #2F303A;
+    --background-quaternary-color: #F5F4FA;
+   
 }
-/*Common settings*/
+/*Basic settings*/
 .body{
-    background-color: var(--primary-background-color);
-    color: var(--primary-text-color);
+    background-color: var(--background-color);
+    color: var(--text-color);
 
     font-family: "Roboto";
     font-weight: 400;
@@ -98,7 +98,7 @@ button:focus
     color: var(--accent-color);
 }
 .nav-link{
-    color: var(--secondary-text-color);
+    color: var(--text-secondary-color);
 }
 
 .nav-link-active{
@@ -108,7 +108,7 @@ button:focus
     display: flex;
     align-items: center;
 
-    color: var(--primary-text-color);
+    color: var(--text-color);
 }
 
 .nav-link:hover,
@@ -131,7 +131,7 @@ button:focus
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    color: var(--primary-text-color);
+    color: var(--text-color);
 }
 .nav-link,
 .contact-link {
@@ -170,7 +170,7 @@ max-width: 1600px;
 margin-left: auto;
 margin-right: auto;
 
-background-color: var(--tertiary-background-color);
+background-color: var(--background-tertiary-color);
 background-image: url('../images/background.jpg');
 background-repeat: no-repeat;
 background-position: center;
@@ -237,7 +237,7 @@ text-transform: uppercase;
 
     width: 528px;
     height: 581px;
-    background-color: var(--primary-background-color);
+    background-color: var(--background-color);
     
 }
 .modal-close {
@@ -289,7 +289,7 @@ text-transform: uppercase;
 .form-label-comment {
     display: block;
     text-align: left;
-    color: var(--primary-text-color);
+    color: var(--text-color);
     font-family: Roboto;
     font-size: 12px;
     font-weight: 400;
@@ -428,8 +428,8 @@ text-transform: uppercase;
 
 /*Advantage*/
 .advantage-section{
-    background-color: var(--primary-background-color);
-    color: var(--primary-text-color);
+    background-color: var(--background-color);
+    color: var(--text-color);
     padding-top: 94px;
     padding-bottom: 94px;
     
@@ -442,7 +442,7 @@ text-transform: uppercase;
     border-radius: 4px;
     height: 120px;
     width: 270px;
-    background-color: var(--quaternary-background-color);
+    background-color: var(--background-quaternary-color);
     
 }
 .advantage{
@@ -464,7 +464,7 @@ text-transform: uppercase;
 .advantage-title{
     margin-bottom: 10px;
 
-    color: var(--secondary-text-color);
+    color: var(--text-secondary-color);
     font-weight: 700;
     font-size: 14px;
     line-height: 1.1;
@@ -476,7 +476,7 @@ text-transform: uppercase;
     padding-bottom: 94px;
 }
 .about-heading, .team-title, .client-section-heading{
-color: var(--secondary-text-color);
+color: var(--text-secondary-color);
 
 margin-bottom: 50px;
 text-align: center;
@@ -503,12 +503,12 @@ justify-content: space-between;
     font-weight: 700;
     line-height: 70px;
     text-transform: uppercase;
-    color: var(--primary-background-color);
+    color: var(--background-color);
     background-color: rgba(47, 48, 58, 0.8);
 }
 /*Team*/
 .team{
-    background-color: var(--quaternary-background-color);
+    background-color: var(--background-quaternary-color);
 
     text-align: center;
     padding-top: 94px;
@@ -524,7 +524,7 @@ display: flex;
 .team-member{
     margin-bottom: 10px;
 
-    color: var(--secondary-text-color);
+    color: var(--text-secondary-color);
 
     font-weight: 500;
     font-size: 16px;
@@ -536,12 +536,12 @@ display: flex;
     margin-bottom: 10px;
 }
 .team .item{
-    background-color: var(--primary-background-color);
+    background-color: var(--background-color);
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .team-member-occupation{
-color: var(--primary-text-color);
+color: var(--text-color);
 
 font-weight: 400;
 font-size: 16px;
@@ -586,7 +586,7 @@ margin-bottom: 16px;
 }
 .social-link:hover .social-icon,
 .social-link:focus .social-icon {
-    fill: var(--primary-background-color);
+    fill: var(--background-color);
 }
 /*Clients*/
 .clients{
@@ -637,7 +637,7 @@ margin-bottom: 16px;
 padding-top: 60px;
 padding-bottom: 60px;
 
-background-color: var(--tertiary-background-color);
+background-color: var(--background-tertiary-color);
 }
 .footer-logo {
 display: block;
@@ -681,7 +681,7 @@ font-style: normal;
     color: #ffffff;
 }
 .footer-social .social-icon {
-    fill: var(--primary-background-color);
+    fill: var(--background-color);
 }
 
 .footer-social .social-link {
@@ -757,7 +757,7 @@ font-style: normal;
 }
 /*Портфолио*/
 .portfolio-hero{
-background-color: var(--primary-background-color);
+background-color: var(--background-color);
 padding-top: 94px;
 padding-bottom: 94px;
 }
@@ -861,7 +861,7 @@ padding-bottom: 94px;
     height: 294px;
     font-size: 18px;
     line-height: 1.5;
-    color: var(--primary-background-color);
+    color: var(--background-color);
     background-color: rgba(33, 150, 243, 0.9);
 
     transition-property: bottom;
@@ -869,7 +869,7 @@ padding-bottom: 94px;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .project-name{
-    color: var(--secondary-text-color);
+    color: var(--text-secondary-color);
 
     font-family: var(--main-font);
     font-weight: 700;
@@ -878,7 +878,7 @@ padding-bottom: 94px;
     letter-spacing: 0.06em;
 }
 .project-description{
-color: var(--primary-text-color);
+color: var(--text-color);
 
 font-family: Roboto;
 font-weight: 400;
