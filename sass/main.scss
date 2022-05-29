@@ -1,11 +1,15 @@
-@import "./utils/variables";
+@import "./base.scss/_common";
+@import "./base.scss/_container";
+@import "./components.scss/heading";
+@import "./components.scss/modal";
+@import "./components.scss/logo";
+@import "./outline.scss/client";
+@import "./outline.scss/header";
+@import "./outline.scss/hero";
+@import "./outline.scss/advantage";
+@import "./outline.scss/about";
+@import "./outline.scss/team";
+@import "./outline.scss/footer";
+@import "./utils.scss/variables";
+@import "./portfolio.scss/portfolio.scss";
 
-@import "./base/modern-normalize";
-@import "./base/basic";
-
-@import "./components/backdrop";
-@import "./components/site-nav";
-@import "./components/logo";
-@import "./components/contacts";
-@import "./components/container";
-@import "./components/header";

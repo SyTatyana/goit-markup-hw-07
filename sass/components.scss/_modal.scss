@@ -1,0 +1,225 @@
+.backdrop {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+
+    background-color: rgba(0, 0, 0, 0.2);
+
+    transition-property: opacity;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+
+&.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+}
+}
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+
+    width: 528px;
+    height: 581px;
+    background-color: var(--background-color);
+
+}
+
+.modal-close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+
+    transition-property: opacity;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+&:hover .icon-close,
+&:focus .icon-close {
+    fill: var(--accent-color);
+    cursor: pointer;
+}
+}
+
+.icon-close {
+    fill: #000000;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+
+.hero-form {
+    padding: 40px;
+}
+
+.form-title {
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2;
+    color: #212121;
+    margin-bottom: 12px;
+}
+
+.form-label-username,
+.form-label-tel,
+.form-label-email,
+.form-label-comment {
+    display: block;
+    text-align: left;
+    color: var(--text-color);
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.form-input,
+.form-textarea-comment {
+    width: 100%;
+    padding-left: 42px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    outline: none;
+    transition-property: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-input {
+    height: 40px;
+    fill: #212121;
+}
+
+.form-textarea-comment {
+    height: 120px;
+    resize: none;
+    padding: 12px 16px;
+    margin-top: 4px;
+
+
+&::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.1;
+
+}
+}
+.form-label-comment {
+    margin-bottom: 20px;
+
+}
+
+.form-input:focus,
+.form-textarea-comment:focus {
+    border-color: var(--accent-color);
+    outline: none;
+}
+
+.form-input:focus+.form-icon {
+    fill: var(--accent-color);
+}
+
+.icon-container {
+    position: relative;
+    display: block;
+    margin-top: 4px;
+    margin-bottom: 10px;
+}
+
+.form-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-label-agree {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--text-color);
+    margin-bottom: 30px;
+}
+
+.form-label-agree::before {
+    display: block;
+    content: '';
+    width: 16px;
+    height: 15px;
+    border: 1px solid #212121;
+    cursor: pointer;
+    margin-right: 8px;
+    transition-property: border-color, background-color, background-image;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-input-agree:focus+.form-label-agree:before {
+    border-color: var(--accent-color);
+}
+
+.form-input-agree:checked+.form-label-agree:before {
+    background-color: var(--accent-color);
+    background-image: url(../images/agree.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.form-button {
+    padding: 10px 32px;
+    border: none;
+    border-radius: 4px;
+    min-width: 200px;
+
+    color: #ffffff;
+    background-color: var(--accent-color);
+
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.06em;
+}
+
+.form-link-agree {
+    color: var(--accent-color);
+    text-decoration: underline;
+    margin-left: 4px;
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
