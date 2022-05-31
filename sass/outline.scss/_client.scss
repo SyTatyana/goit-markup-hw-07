@@ -1,9 +1,9 @@
-.clients {
+.client {
     padding-top: 94px;
     padding-bottom: 94px;
 }
 
-.client-list {
+.client__list {
     list-style: none;
     display: flex;
     justify-content: center;
@@ -11,7 +11,7 @@
     justify-content: space-between;
 }
 
-.client-link {
+.client__link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -29,7 +29,7 @@
     border-color: var(--accent-color);
 }
 }
-.client-icon {
+.client__icon {
     fill: #afb1b8;
 
     transition-property: fill;
@@ -39,7 +39,7 @@
 
 
 
-.client-link:hover .client-icon,
-.client-link:focus .client-icon {
+.client__link:hover .client__icon,
+.client__link:focus .client__icon {
     fill: var(--accent-color);
 }

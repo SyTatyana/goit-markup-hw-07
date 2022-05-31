@@ -1,4 +1,4 @@
-.hero-section {
+.hero {
     max-height: 600px;
     max-width: 1600px;
     margin-left: auto;
@@ -17,7 +17,7 @@
     text-align: center;
 }
 
-.hero-section-title {
+.hero__title {
     margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
@@ -32,7 +32,7 @@
     text-transform: uppercase;
 }
 
-.hero-section-btn {
+.hero__btn {
     cursor: pointer;
     color: #FFFFFF;
     background-color: var(--accent-color);
@@ -41,7 +41,7 @@
     border: none;
     border-radius: 4px;
 
-    font-family: Roboto;
+    font-family: $mainFont;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.9;
